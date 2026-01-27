@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>AHLI PASUKAN</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-blue-900 text-white">
+
+  <div class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+    <div class="flex items-center gap-4">
+      <img
+        src="/assets/logo.png"
+        alt="LOGO ICT"
+        class="h-12 w-12 object-contain bg-white rounded p-1"
+      >
+
+      <div>
+        <h1 class="text-xl font-bold">
+          PASUKAN TEKNIKAL ICT SEKOLAH DAERAH BALING
+        </h1>
+        <p class="text-sm">ZON KUALA KETIL</p>
+      </div>
+    </div>
+
+  <!-- KANAN: LOGIN + TARIKH -->
+<div class="ml-auto text-right">
+  <span id="tarikhHari" class="text-xs text-blue-100"></span>
+</div>
+
+
+</div>
+
+  <!-- ================= NAVIGATION ================= -->
+<nav class="bg-blue-800">
+  <ul class="flex justify-center items-center gap-6 py-3 text-sm font-semibold text-white">
+
+    <li><a href="/index.html" class="hover:underline">UTAMA</a></li>
+
+    <li>
+      <a href="/sektor-pengurusan.html" class="hover:underline">
+        SEKTOR PENGURUSAN MAKLUMAT
+      </a>
+    </li>
+
+    <!-- AHLI PASUKAN -->
+    <li class="relative group flex items-center">
+      <span class="cursor-pointer flex items-center gap-1 hover:underline leading-none select-none">
+        AHLI PASUKAN
+        <svg class="h-4 w-4 transition-transform duration-200 group-hover:rotate-180"
+             fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </span>
+
+      <div class="absolute left-0 top-full h-2 w-full"></div>
+
+      <ul class="absolute left-0 top-full hidden group-hover:block
+                 bg-white text-blue-900 min-w-[260px]
+                 rounded shadow-lg border z-50">
+
+        <li><a href="/ahli-pasukan.html" class="block px-4 py-2 hover:bg-blue-100">
+          Carta Organisasi Pasukan
+        </a></li>
+
+        <li><a href="/skop-tugas-jtk.html" class="block px-4 py-2 hover:bg-blue-100">
+          Skop Tugas Juruteknik Komputer (JTK)
+        </a></li>
+
+        <li><a href="/maklumat-perhubungan.html" class="block px-4 py-2 hover:bg-blue-100">
+          Maklumat Perhubungan (Sekolah Seliaan)
+        </a></li>
+      </ul>
+    </li>
+
+    <li>
+  <a href="/maklumat-sekolah.html" class="hover:underline">
+    MAKLUMAT SEKOLAH
+  </a>
+</li>
+
+    <li><a href="/meja-perkhidmatan-isd.html" class="hover:underline">
+    MEJA PERKHIDMATAN ISD
+  </a>
+</li>
+    <li><a href="/kabinet-borang.html" class="hover:underline">
+      KABINET BORANG
+    </a>
+  </li>
+
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="p-6 max-w-6xl mx-auto space-y-10">
+
+  <section class="bg-white p-6 rounded shadow">
+    <h2 class="text-xl font-bold text-center mb-6">
+      CARTA KESELURUHAN<br>
+      AHLI PASUKAN TEKNIKAL ICT
+    </h2>
+
+    <div class="flex justify-center">
+      <a href="/assets/carta-ahli-pasukan.png" target="_blank">
+        <img
+          src="/assets/carta-ahli-pasukan.png"
+          alt="Carta Keseluruhan Ahli Pasukan Teknikal ICT"
+          class="max-w-full h-auto border rounded shadow cursor-zoom-in hover:opacity-90"
+        >
+      </a>
+    </div>
+
+    <p class="text-sm text-center text-gray-600 mt-4">
+      Klik pada gambar untuk paparan penuh
+    </p>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-blue-900 text-white mt-12">
+  <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm">
+    © 2026 PASUKAN TEKNIKAL ICT SEKOLAH DAERAH BALING<br>
+    ZON KUALA KETIL
+  </div>
+</footer>
+
+<script>
+  function kemaskiniTarikh() {
+    const hari = ["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"];
+    const bulan = ["Januari","Februari","Mac","April","Mei","Jun","Julai",
+                   "Ogos","September","Oktober","November","Disember"];
+
+    const d = new Date();
+
+    document.getElementById("tarikhHari").textContent =
+      hari[d.getDay()] + ", " +
+      d.getDate() + " " +
+      bulan[d.getMonth()] + " " +
+      d.getFullYear() + " • " +
+      d.toLocaleTimeString("ms-MY");
+  }
+
+  kemaskiniTarikh();
+  setInterval(kemaskiniTarikh, 1000);
+</script>
+
+</body>
+</html>
+

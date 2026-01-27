@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Sektor Pengurusan Maklumat</title>
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- HEADER -->
+<header class="bg-blue-900 text-white">
+
+  <div class="flex items-center p-6 max-w-7xl mx-auto">
+
+    <!-- KIRI: LOGO + TAJUK -->
+    <div class="flex items-center gap-4">
+      <img src="/assets/logo.png" class="h-12 bg-white rounded p-1">
+      <div>
+        <h1 class="font-bold text-xl">
+          PASUKAN TEKNIKAL ICT SEKOLAH DAERAH BALING
+        </h1>
+        <p class="text-sm">ZON KUALA KETIL</p>
+      </div>
+    </div>
+
+    <!-- KANAN: TARIKH -->
+    <div class="ml-auto text-right">
+      <span id="tarikhHari" class="text-xs text-blue-100"></span>
+    </div>
+
+  </div>
+
+ <!-- NAV -->
+  <nav class="bg-blue-800">
+    <ul class="flex justify-center items-center gap-6 py-3 text-sm font-semibold text-white">
+          <li><a href="/index.html" class="hover:underline">UTAMA</a></li>
+
+      <li>
+        <a href="/sektor-pengurusan.html" class="hover:underline">
+          SEKTOR PENGURUSAN MAKLUMAT
+        </a>
+      </li>
+
+      <!-- AHLI PASUKAN -->
+      <li class="relative group flex items-center">
+        <span class="cursor-pointer flex items-center gap-1 hover:underline select-none">
+          AHLI PASUKAN
+          <svg class="h-4 w-4 transition-transform group-hover:rotate-180"
+               fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </span>
+
+        <ul class="absolute left-0 top-full hidden group-hover:block
+                   bg-white text-blue-900 min-w-[260px]
+                   rounded shadow-lg border z-50">
+
+          <li><a href="/ahli-pasukan.html" class="block px-4 py-2 hover:bg-blue-100">
+            Carta Organisasi Pasukan
+          </a></li>
+
+          <li><a href="/skop-tugas-jtk.html" class="block px-4 py-2 hover:bg-blue-100">
+            Skop Tugas Juruteknik Komputer (JTK)
+          </a></li>
+
+          <li><a href="/maklumat-perhubungan.html" class="block px-4 py-2 hover:bg-blue-100">
+            Maklumat Perhubungan
+          </a></li>
+        </ul>
+      </li>
+
+      <li><a href="/maklumat-sekolah.html" class="hover:underline">MAKLUMAT SEKOLAH</a></li>
+      <li><a href="/meja-perkhidmatan-isd.html" class="hover:underline">MEJA PERKHIDMATAN ISD</a></li>
+      <li><a href="/kabinet-borang.html" class="hover:underline">KABINET BORANG</a></li>
+
+    </ul>
+  </nav>
+
+</header>
+
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="p-6 max-w-6xl mx-auto space-y-8">
+
+<section class="bg-white p-6 rounded shadow space-y-8">
+
+  <h2 class="text-xl md:text-2xl font-bold text-center text-blue-900">
+    Maklumat Perhubungan Juruteknik Komputer (JTK)
+  </h2>
+
+  <p class="text-center text-gray-600 text-sm max-w-3xl mx-auto">
+    Senarai Juruteknik Komputer (JTK) berserta sekolah-sekolah seliaan
+    di bawah Pasukan Teknikal ICT.
+  </p>
+
+  <!-- GRID JTK -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- CARD JTK -->
+    <div class="bg-blue-50 border border-blue-200 rounded p-5 shadow space-y-3">
+      <h3 class="font-bold text-blue-900 text-lg">👨‍🔧 Muhamed Fitri Bin Mohamed Eusop</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800 space-y-1">
+        <li>SK Mohd Arif Abdullah</li>
+        <li>SK Tembak</li>
+        <li>SK Paya Besar</li>
+      </ul>
+    </div>
+
+    <div class="bg-green-50 border border-green-200 rounded p-5 shadow space-y-3">
+      <h3 class="font-bold text-green-900 text-lg">👨‍🔧 Mohd Haris Bin Mat Rosli</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800 space-y-1">
+        <li>SK Teloi Kanan</li>
+        <li>SK Seri Jemerli</li>
+        <li>SMK Teloi Kanan</li>
+      </ul>
+    </div>
+
+    <div class="bg-yellow-50 border border-yellow-200 rounded p-5 shadow space-y-3">
+      <h3 class="font-bold text-yellow-900 text-lg">👨‍🔧 Mohmad Ishak Bin Md Ali</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800 space-y-1">
+        <li>SK Kuala Ketil</li>
+        <li>SJKC Peng Min</li>
+        <li>SMK Tanjong Puteri</li>
+      </ul>
+    </div>
+
+    <div class="bg-purple-50 border border-purple-200 rounded p-5 shadow space-y-3">
+      <h3 class="font-bold text-purple-900 text-lg">👩‍🔧 Noor Diana Binti Saad</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800 space-y-1">
+        <li>SK Kuala Merah</li>
+        <li>SK Kampung Selarong</li>
+        <li>SK Binjul</li>
+        <li>SJKC Kuala Ketil</li>
+      </ul>
+    </div>
+
+    <div class="bg-red-50 border border-red-200 rounded p-5 shadow space-y-3">
+      <h3 class="font-bold text-red-900 text-lg">👨‍🔧 Yusminudin Bin Md Yusof</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800 space-y-1">
+        <li>SK Kuala Samak</li>
+        <li>SK Batu Pekaka</li>
+        <li>SJKT Ladang Bukit Sembilan</li>
+        <li>SMK Kuala Ketil</li>
+      </ul>
+    </div>
+
+    <div class="bg-teal-50 border border-teal-200 rounded p-5 shadow space-y-3">
+      <h3 class="font-bold text-teal-900 text-lg">👩‍🔧 Dikneswary A/P Subaiah</h3>
+      <ul class="list-disc list-inside text-sm text-gray-800 space-y-1">
+        <li>SJKT Binjul</li>
+        <li>SJKT Ladang Batu Pekaka</li>
+        <li>SJKT Ladang Kim Seng</li>
+        <li>SJKT Ladang Malakoff</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-blue-900 text-white mt-12">
+  <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm">
+    © 2026 PASUKAN TEKNIKAL ICT SEKOLAH DAERAH BALING<br>
+    ZON KUALA KETIL
+  </div>
+</footer>
+
+<script>
+  function kemaskiniTarikh() {
+    const hari = ["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"];
+    const bulan = ["Januari","Februari","Mac","April","Mei","Jun","Julai",
+                   "Ogos","September","Oktober","November","Disember"];
+
+    const d = new Date();
+
+    document.getElementById("tarikhHari").textContent =
+      hari[d.getDay()] + ", " +
+      d.getDate() + " " +
+      bulan[d.getMonth()] + " " +
+      d.getFullYear() + " • " +
+      d.toLocaleTimeString("ms-MY");
+  }
+
+  kemaskiniTarikh();
+  setInterval(kemaskiniTarikh, 1000);
+</script>
+
+</body>
+</html>

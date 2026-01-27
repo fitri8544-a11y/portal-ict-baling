@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>JTK DASHBOARD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<header class="bg-blue-900 text-white px-6 py-4 flex justify-between items-center">
+  <h1 class="font-bold text-lg">JTK DASHBOARD</h1>
+
+  <button
+    onclick="logout()"
+    class="bg-white text-blue-900 px-4 py-2 rounded font-semibold text-sm hover:bg-gray-200">
+    LOGOUT
+  </button>
+</header>
+
+<main class="p-6 max-w-7xl mx-auto">
+
+  <!-- TEKS SELAMAT DATANG -->
+  <section class="bg-white p-6 rounded shadow text-center">
+    <p class="font-semibold">
+      SELAMAT DATANG AHLI PASUKAN JTK
+    </p>
+  </section>
+
+  <!-- APPSHEET EMBED -->
+ <section class="bg-white rounded shadow mt-6 text-center p-8">
+  <h2 class="text-lg font-semibold mb-4">
+    ADMIN PASSWORD (APPSHEET)
+  </h2>
+
+  <a
+    href="https://www.appsheet.com/start/728c94e6-9ff5-473a-8083-357c9edaa718"
+    target="_blank"
+    class="inline-block bg-blue-900 text-white px-6 py-3 rounded font-semibold hover:bg-blue-800">
+    BUKA SISTEM APPSHEET
+  </a>
+
+  <p class="text-sm text-gray-500 mt-3">
+    *Akan dibuka dalam tab baharu
+  </p>
+</section>
+
+
+</main>
+
+<!-- LOGIK AUTH & LOGOUT -->
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>
+
+
